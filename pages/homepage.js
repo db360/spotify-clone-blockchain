@@ -2,6 +2,7 @@ import {useEffect, useState} from 'react';
 
 import Nav from '../components/nav';
 import Activity from '../components/activity';
+import Header from '../components/Header';
 
 
 const HomePage = () => {
@@ -11,12 +12,14 @@ const HomePage = () => {
   const [ musicUrl, setMusicUrl ] = useState('');
   const [ songs, setSongs ] = useState([]);
 
+  console.log(showUploadMusic)
+
   return (
     <div className='flex'>
       <Nav />
 
       <div className='w-full'>
-        {/* <Header /> */}
+        <Header setShowUploadMusic={setShowUploadMusic}/>
         {/* <Playlist /> */}
         {/* <PlayerControls /> */}
       </div>
