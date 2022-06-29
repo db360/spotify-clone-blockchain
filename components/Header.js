@@ -16,7 +16,7 @@ const styles = {
 
 }
 
-function Header({ setShowUploadMusic }) {
+function Header( {setShowUploadMusic} ) {
 
   return (
     <div className={styles.header}>
@@ -32,7 +32,7 @@ function Header({ setShowUploadMusic }) {
                 </div>
                 <div className={styles.arrowButton}>
                     <Image
-                        src='/assets/chevronRight.svg'
+                         src='/assets/chevronRight.svg'
                         width={20}
                         height={20}
                         alt='right'
@@ -41,7 +41,7 @@ function Header({ setShowUploadMusic }) {
             </div>
 
             <div className={styles.headerRight}>
-                <UploadButton setShowUploadMusic={setShowUploadMusic}/>
+                <UploadButton setShowUploadMusic={setShowUploadMusic} />
 
                 <div className={styles.profile}>
                     <div className={styles.profileAvatarContainer}>

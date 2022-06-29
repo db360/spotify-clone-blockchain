@@ -51,7 +51,7 @@ const Payment = () => {
       })
     }
 
-    console.log(isPaid)
+    // console.log(isPaid)
 
     const payClicked = async() =>{
       let [payerSigner] = await anchor.web3.PublicKey.findProgramAddress(
@@ -60,7 +60,7 @@ const Payment = () => {
       )
 
       let payerInfo;
-      console.log(payerInfo)
+      // console.log(payerInfo)
 
       try {
         payerInfo = await program.account.payerAccount.fetch(payerSigner)

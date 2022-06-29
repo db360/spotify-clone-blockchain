@@ -3,15 +3,16 @@ const styles = {
     uploadButton: `bg-green-500 mr-10 px-3 py-1.5 cursor-pointer rounded-full hover:scale-95 transition`
 }
 
-const UploadButton = ({ setShowUpLoadMusic }) => {
+const UploadButton = ( {setShowUploadMusic} ) => {
 
     const uploadClicked = () => {
-        setShowUpLoadMusic(true)
+        setShowUploadMusic(true)
+        console.log(setShowUploadMusic);
     }
 
   return (
     <div>
-        <div className={styles.uploadButton} onClick={uploadClicked}>
+        <div onClick={uploadClicked} className={styles.uploadButton} >
             Upload Music
         </div>
     </div>
