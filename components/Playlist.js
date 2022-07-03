@@ -2,15 +2,12 @@ import { useEffect, useState } from "react";
 import TableRow from "./TableRow";
 
 const styles = {
-    tableWrapper: `max-w-7xl m-auto p-3 mt-5 mb-40`,
+    tableWrapper: `max-w-7xl m-auto p-3 mt-5 mb-20`,
     table: `w-full text-left`,
     tableHeader: `border-b border-gray-100/20 pb-5 opacity-50`
 }
 
 const Playlist = ({songs}) => {
-
-
-
   return (
     <div className={styles.tableWrapper}>
         <table className={styles.table}>
@@ -27,7 +24,8 @@ const Playlist = ({songs}) => {
             <tbody className="mb-6 block"></tbody>
 
             {songs.map(song => {
-                return <TableRow key={song.id} song={song}/>
+                // console.log(song)
+                return <TableRow key={song.index } song={song}/>
             })}
         </table>
     </div>

@@ -1,5 +1,8 @@
 import Image from 'next/image';
 import UploadButton from './uploadButton';
+import {useContext} from 'react';
+import { SpotifyContext } from '../context/Context';
+
 
 const styles = {
     header: `max-w-7xl m-auto p-3`,
@@ -17,6 +20,8 @@ const styles = {
 }
 
 function Header( {setShowUploadMusic} ) {
+
+    const { currentSong } = useContext(SpotifyContext);
 
   return (
     <div className={styles.header}>
@@ -69,7 +74,7 @@ function Header( {setShowUploadMusic} ) {
 
             <div className='ml-5'>
                     <div>ALBUM</div>
-                    <div className={styles.title}>Your Album</div>
+                    <div className={styles.title}>{currentSong.album}</div>
                     <div className='flex items-center mt-5'>
                         <div className={styles.profileAvatarContainer}>
                         <Image width={20} height={20}alt='' src='/assets/avatar.jpg' className='rounded-full' />

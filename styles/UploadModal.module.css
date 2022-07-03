@@ -64,7 +64,7 @@
   border-radius: 9px;
   color: #fff;
   cursor: pointer;
-  transition: 0.2s linear;
+  transition: 0.3s ease-in-out;
   width: 8rem;
   align-items: center;
   justify-content: center;
@@ -74,11 +74,23 @@
   margin: 0.5rem;
 }
 
+.button:hover {
+  font-weight: 900;
+}
+
 .createButton {
   background-color: #4e44ce;
+}
+.createButton:hover {
+  background-color: #fff;
+  color: #4e44ce;
 }
 
 .cancelButton {
   border: 2px #fe2d55 solid;
   color: #fe2d55;
+}
+.cancelButton:hover {
+  background-color: #fe2d55;
+  color: #fff;
 }

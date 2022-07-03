@@ -13,7 +13,8 @@ const nextConfig = {
       'i.scdn.co',
       'resources.tidal.com',
       'encrypted-tbn1.gstatic.com',
-      'm.media-amazon.com'
+      'm.media-amazon.com',
+      'res.cloudinary.com'
     ],
   },
 }

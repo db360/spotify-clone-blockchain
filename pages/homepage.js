@@ -9,6 +9,7 @@ import UploadModal from '../components/UploadModal';
 import Playlist from '../components/Playlist';
 
 import {songs} from '../data/songs';
+import PlayerControls from '../components/PlayerControls';
 
 
 const HomePage = () => {
@@ -33,10 +34,9 @@ const HomePage = () => {
 
       <div className='w-full'>
         <Header setShowUploadMusic={setShowUploadMusic}/>
-        <Playlist
-          songs={songs}
-        />
-        {/* <PlayerControls /> */}
+        <Playlist songs={songs}/>
+        <PlayerControls songs={songs} />
+        
         {showUploadMusic && (
           <UploadModal
             title={title}
