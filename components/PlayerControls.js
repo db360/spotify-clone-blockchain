@@ -38,7 +38,6 @@ const PlayerControls = ({ songs }) => {
     onVolumeChange,
     timeStamp,
     progress,
-    updateProgress,
     playNext,
     playPrevious,
     isPaused,
@@ -47,7 +46,7 @@ const PlayerControls = ({ songs }) => {
     onProgressChange,
   } = useContext(SpotifyContext);
 
-   console.log(isPlaying)
+  //  console.log(isPlaying)
 
   if(!isPlaying) return null; // cierra el reproductor cuando no hay isPlaying
 
@@ -100,7 +99,7 @@ const PlayerControls = ({ songs }) => {
           </div>
         </div>
         <div className={styles.flexCenter}>
-          <small>{Math.round(progress)}</small>
+          <small>{timeStamp}</small>
           <input
             value={progress}
             type="range"

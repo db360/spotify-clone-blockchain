@@ -59,7 +59,7 @@ const useSpotify = (
             },
         )
 
-        conole.log(tx);
+        console.log(tx);
 
         setTitle('');
         setMusicUrl('');

@@ -7,7 +7,7 @@ const UploadButton = ( {setShowUploadMusic} ) => {
 
     const uploadClicked = () => {
         setShowUploadMusic(true)
-        console.log(setShowUploadMusic);
+        // console.log(setShowUploadMusic);
     }
 
   return (

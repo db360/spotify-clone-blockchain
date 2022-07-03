@@ -1,6 +1,6 @@
 export const songs = [
   {
-    index: 1,
+    index: 10,
     title: 'Path Less Traveled',
     artist: 'Lo-Fi',
     plays: '20,382',
@@ -11,7 +11,7 @@ export const songs = [
     link: 'https://res.cloudinary.com/dgjl7f1o0/video/upload/v1653077699/spotify-clone/Copy_of_1._Harris_Heller_-_Path_Less_Traveled_hlxpnf.mp3',
   },
   {
-    index: 2,
+    index: 20,
     title: 'Radiant Vibes',
     artist: 'SteamBeats originals',
     plays: '1,324',

@@ -24,8 +24,8 @@ const Playlist = ({songs}) => {
             <tbody className="mb-6 block"></tbody>
 
             {songs.map(song => {
-                // console.log(song)
-                return <TableRow key={song.index } song={song}/>
+                console.log(song)
+                return <TableRow key={song.account.toString()} song={song.account}/>
             })}
         </table>
     </div>
